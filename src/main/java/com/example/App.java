@@ -9,10 +9,10 @@ public class App {
     public static void main(String[] args) {
 
         ChromeOptions options = new ChromeOptions();
-        options.addArgument("--headless=new");
-        options.addArgument("--no-sandbox");
-        options.addArgument("--disable-dev-shm-usage");
-        options.addArgument("--disable-gpu");
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");
 
         WebDriver driver = new ChromeDriver(options);
 
