@@ -11,13 +11,13 @@ public class App {
         ChromeOptions options = new ChromeOptions();
         options.addArgument("--headless=new");
         options.addArgument("--no-sandbox");
-        options.addargument("--disable-dev-shm-usage");
+        options.addArgument("--disable-dev-shm-usage");
         options.addArgument("--disable-gpu");
 
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(options);
 
-        driver.get("https://wwww.saucedemo.com");
-        driver.System.out.println(driver.getTitle());
+        driver.get("https://www.saucedemo.com");
+        System.out.println(driver.getTitle());
         driver.quit();
 
     }
